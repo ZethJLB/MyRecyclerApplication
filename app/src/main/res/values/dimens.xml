@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    Globals-->
+    <dimen name="global_title_text_size">20sp</dimen>
+    <dimen name="global_margin_topmost">35dp</dimen>
+    <dimen name="height_200">200dp</dimen>
+    <dimen name="global_padding_10dp">10dp</dimen>
+
+<!--    spacer-->
+    <dimen name="global_75dp_spacer">75dp</dimen>
+
+
+    <!--Main resource file -->
+    <dimen name="recycler_row_padding">10dp</dimen>
+    <dimen name="recycler_row_text_size">15sp</dimen>
+    <dimen name="recycler_row_border_thickness">0.5dp</dimen>
+
+<!--    Button-->
+    <dimen name="activity_button_widget_width">250dp</dimen>
+    <dimen name="activity_button_margin_top">35dp</dimen>
+
+
+     250dp
+
+</resources>

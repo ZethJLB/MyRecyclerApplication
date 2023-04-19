@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityButton">
+<!--First Input-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="@dimen/activity_button_widget_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/global_margin_topmost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activityButtonInputOneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/activity_button_hint"
+            android:textSize="@dimen/global_title_text_size"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+<!--Second Input-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="@dimen/activity_button_widget_width"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activityButtonInputTwoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/global_margin_topmost"
+            android:hint="@string/activity_button_hint"
+            android:textSize="@dimen/global_title_text_size"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/activityButtonButton"
+        android:layout_width="@dimen/activity_button_widget_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="MULTIPLY"
+        android:textSize="@dimen/global_title_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="@dimen/global_padding_10dp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+    <EditText
+        android:id="@+id/activityButtonResultEditText"
+        android:layout_width="@dimen/activity_button_widget_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/global_padding_10dp"
+        android:textSize="@dimen/global_title_text_size"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityButtonButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

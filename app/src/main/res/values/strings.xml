@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyRecyclerApplication</string>
+
+<!--    ActivityButton-->
+    <string name="activity_button_hint">Enter Integer</string>
+    <string name="activity_button_submit">MULTIPLY</string>
+
+</resources>
