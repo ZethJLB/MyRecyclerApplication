@@ -1,8 +1,19 @@
 <resources>
     <string name="app_name">MyRecyclerApplication</string>
 
-<!--    ActivityButton-->
+    <!--    ActivityButton-->
     <string name="activity_button_hint">Enter Integer</string>
-    <string name="activity_button_submit">MULTIPLY</string>
+
+<!--    ActivityRadioButton-->
+
+    <string name="activity_radio_button_title">Please select a language</string>
+    <string name="activity_radio_button_result">Nothing Selected</string>
+    <string name="activity_radio_button_choice_java">Java</string>
+    <string name="activity_radio_button_choice_kotlin">Kotlin</string>
+    <string name="activity_radio_button_choice_python">Python</string>
+    <string name="activity_radio_button_love_java">You love Java!</string>
+    <string name="activity_radio_button_love_kotlin">You love Kotlin!</string>
+    <string name="activity_radio_button_love_python">You love Python!</string>
+
 
 </resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityRadioButton">
+
+    <TextView
+        android:id="@+id/activityRadioButtonTextViewTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/global_100dp_spacer"
+        android:textAlignment="center"
+        android:textSize="@dimen/global_30sp_text_size"
+        android:text="@string/activity_radio_button_title" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activityRadioButtonTextViewTitle"
+        android:layout_marginTop="@dimen/global_100dp_spacer"
+        android:layout_marginStart="@dimen/global_75dp_spacer"
+        android:padding="@dimen/global_padding_10dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonActivityChoiceJava"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_radio_button_choice_java"
+            android:padding="@dimen/global_padding_10dp"
+            android:textSize="@dimen/global_title_text_size"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonActivityChoiceKotlin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_radio_button_choice_kotlin"
+            android:padding="@dimen/global_padding_10dp"
+            android:textSize="@dimen/global_title_text_size"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonActivityChoicePython"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_radio_button_choice_python"
+            android:padding="@dimen/global_padding_10dp"
+            android:textSize="@dimen/global_title_text_size"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/activityRadioButtonResultText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_200"
+        android:textAlignment="center"
+        android:text="@string/activity_radio_button_result"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/global_100dp_spacer"
+        android:textSize="@dimen/global_title_text_size"/>
+</RelativeLayout>

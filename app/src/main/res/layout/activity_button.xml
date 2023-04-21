@@ -22,6 +22,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/activity_button_hint"
             android:textSize="@dimen/global_title_text_size"
+            android:inputType="number"
+            android:maxLength="4"
             />
     </com.google.android.material.textfield.TextInputLayout>
 <!--Second Input-->
@@ -40,6 +42,8 @@
             android:layout_marginTop="@dimen/global_margin_topmost"
             android:hint="@string/activity_button_hint"
             android:textSize="@dimen/global_title_text_size"
+            android:inputType="number"
+            android:maxLength="4"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -61,7 +65,7 @@
         android:layout_width="@dimen/activity_button_widget_width"
         android:layout_height="wrap_content"
         android:padding="@dimen/global_padding_10dp"
-        android:textSize="@dimen/global_title_text_size"
+        android:textSize="@dimen/global_30sp_text_size"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

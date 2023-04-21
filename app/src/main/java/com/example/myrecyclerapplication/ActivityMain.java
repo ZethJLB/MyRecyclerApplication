@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.myrecyclerapplication.utils.MyRecyclerViewAdapter;
+
 import java.util.ArrayList;
 
 public class ActivityMain extends AppCompatActivity implements MyRecyclerViewAdapter.ItemClickListener{
@@ -67,8 +69,8 @@ public class ActivityMain extends AppCompatActivity implements MyRecyclerViewAda
 //            openActivityPhoneCall();
             break;
         case 6:
-            //Radio Button
-//            openActivityRadioButton();
+//            Radio Button
+            openActivityRadioButton();
             break;
         case 7:
             //Web View
@@ -84,6 +86,12 @@ public class ActivityMain extends AppCompatActivity implements MyRecyclerViewAda
             break;
     }
     }
+
+    private void openActivityRadioButton() {
+        Intent intent = new Intent(this, ActivityRadioButton.class);
+        startActivity(intent);
+    }
+
     public void openActivityAccelerometer(){
         Intent intent = new Intent(this, ActivityAccelerometer.class);
         startActivity(intent);

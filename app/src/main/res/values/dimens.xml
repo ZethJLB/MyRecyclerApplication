@@ -2,12 +2,14 @@
 <resources>
 <!--    Globals-->
     <dimen name="global_title_text_size">20sp</dimen>
+    <dimen name="global_30sp_text_size">30sp</dimen>
     <dimen name="global_margin_topmost">35dp</dimen>
     <dimen name="height_200">200dp</dimen>
     <dimen name="global_padding_10dp">10dp</dimen>
 
 <!--    spacer-->
     <dimen name="global_75dp_spacer">75dp</dimen>
+    <dimen name="global_100dp_spacer">100dp</dimen>
 
 
     <!--Main resource file -->
