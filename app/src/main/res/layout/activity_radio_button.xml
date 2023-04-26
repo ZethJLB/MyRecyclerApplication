@@ -16,6 +16,7 @@
         android:text="@string/activity_radio_button_title" />
 
     <RadioGroup
+        android:id="@+id/activityRadioButtonRadioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/activityRadioButtonTextViewTitle"
