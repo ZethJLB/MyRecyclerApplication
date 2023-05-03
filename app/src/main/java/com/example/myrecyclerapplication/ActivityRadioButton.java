@@ -18,7 +18,6 @@ public class ActivityRadioButton extends AppCompatActivity {
         setContentView(R.layout.activity_radio_button);
 
         addRadioGroupListener();
-//        Log.d(TAG, "Lets go programmers!");
     }
 
     public void addRadioGroupListener(){

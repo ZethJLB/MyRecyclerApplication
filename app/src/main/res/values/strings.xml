@@ -4,7 +4,7 @@
     <!--    ActivityButton-->
     <string name="activity_button_hint">Enter Integer</string>
 
-<!--    ActivityRadioButton-->
+    <!--    ActivityRadioButton-->
 
     <string name="activity_radio_button_title">Please select a language</string>
     <string name="activity_radio_button_result">Nothing Selected</string>
@@ -15,5 +15,19 @@
     <string name="activity_radio_button_love_kotlin">You love Kotlin!</string>
     <string name="activity_radio_button_love_python">You love Python!</string>
 
+    <!--    Activity Persistent Data-->
+    <string name="activity_persistent_data_title">Set Vessel Data</string>
+    <string name="activity_persistent_boat_name">Vessel Name</string>
+    <string name="activity_persistent_boat_length">Vessel Length</string>
+    <string name="activity_persistent_boat_registration">Registration</string>
+    <string name="activity_persistent_submit">Save/Update</string>
+
+    <!--    Activity Slider-->
+    <string name="activity_slider_title">Slider Fun!</string>
+    <string name="activity_slider_result">Result</string>
+    <string name="title_activity_maps">ActivityMaps</string>
+
+<!--    Activity GPS-->
+    <string name="activity_gps_button">Current GPS Coordinate</string>
 
 </resources>

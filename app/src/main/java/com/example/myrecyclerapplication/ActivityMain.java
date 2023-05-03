@@ -31,7 +31,8 @@ public class ActivityMain extends AppCompatActivity implements MyRecyclerViewAda
         coreModules.add("Radio Button");
         coreModules.add("WebView");
         coreModules.add("Toggle");
-        coreModules.add("Etc");
+        coreModules.add("Persistent Data");
+        coreModules.add("Slider");
 
         //Set up the RecyclerView
         RecyclerView recyclerView = findViewById(R.id.rvCourseModules);
@@ -58,11 +59,11 @@ public class ActivityMain extends AppCompatActivity implements MyRecyclerViewAda
             break;
         case 3:
             //GPS
-//            openActivityGPS();
+            openActivityGPS();
             break;
         case 4:
             //Map
-//            openActivityMap();
+            openActivityMap();
             break;
         case 5:
             //Phone Call
@@ -81,10 +82,34 @@ public class ActivityMain extends AppCompatActivity implements MyRecyclerViewAda
 //            openActivityToggle();
             break;
         case 9:
-            //Etc
-//            openActivityEtc();
+            //Persistent Data
+            openActivityPersistentData();
             break;
+        case 10:
+            //Slider
+            openActivitySlider();
+            break;    
     }
+    }
+
+    private void openActivityGPS() {
+        Intent intent = new Intent(this, ActivityGps.class);
+        startActivity(intent);
+    }
+
+    private void openActivityMap() {
+        Intent intent = new Intent(this, ActivityMaps.class);
+        startActivity(intent);
+    }
+
+    private void openActivitySlider() {
+        Intent intent = new Intent(this, ActivitySlider.class);
+        startActivity(intent);
+    }
+
+    private void openActivityPersistentData() {
+        Intent intent = new Intent(this, ActivityPersistentData.class);
+        startActivity(intent);
     }
 
     private void openActivityRadioButton() {

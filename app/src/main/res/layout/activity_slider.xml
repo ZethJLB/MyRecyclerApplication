@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySlider">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/global_margin_topmost"
+        android:paddingLeft="@dimen/global_50dp_spacer"
+        android:paddingRight="@dimen/global_50dp_spacer"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/global_30sp_text_size"
+            android:text="@string/activity_slider_title"
+            android:textAlignment="center"
+            />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/activitySliderSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/global_margin_topmost"
+            android:stepSize="1"
+            android:valueFrom="0"
+            android:valueTo="255"
+            android:value="55"
+            >
+
+        </com.google.android.material.slider.Slider>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activitySliderButton"
+        android:layout_width="@dimen/activity_button_widget_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/global_padding_20dp"
+        android:text="@string/activity_slider_result"
+        android:textSize="@dimen/global_30sp_text_size"
+        android:layout_marginTop="@dimen/global_margin_topmost"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

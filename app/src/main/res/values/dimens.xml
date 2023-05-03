@@ -9,6 +9,8 @@
 
 <!--    spacer-->
     <dimen name="global_75dp_spacer">75dp</dimen>
+    <dimen name="global_padding_20dp">20dp</dimen>
+    <dimen name="global_50dp_spacer">50dp</dimen>
     <dimen name="global_100dp_spacer">100dp</dimen>
 
 
@@ -19,9 +21,7 @@
 
 <!--    Button-->
     <dimen name="activity_button_widget_width">250dp</dimen>
+    <dimen name="activity_button_widget_height">250dp</dimen>
     <dimen name="activity_button_margin_top">35dp</dimen>
-
-
-     250dp
 
 </resources>
