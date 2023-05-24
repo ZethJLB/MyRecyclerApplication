@@ -33,6 +33,7 @@ public class ActivityMain extends AppCompatActivity implements MyRecyclerViewAda
         coreModules.add("Toggle");
         coreModules.add("Persistent Data");
         coreModules.add("Slider");
+        coreModules.add("Remote Data");
 
         //Set up the RecyclerView
         RecyclerView recyclerView = findViewById(R.id.rvCourseModules);
@@ -75,7 +76,7 @@ public class ActivityMain extends AppCompatActivity implements MyRecyclerViewAda
             break;
         case 7:
             //Web View
-//            openActivityWebView();
+            openActivityWebView();
             break;
         case 8:
             //Toggle
@@ -88,8 +89,22 @@ public class ActivityMain extends AppCompatActivity implements MyRecyclerViewAda
         case 10:
             //Slider
             openActivitySlider();
-            break;    
+            break;
+        case 11:
+            //Remote Data
+            openActivityRemoteData();
+            break;
     }
+    }
+
+    private void openActivityRemoteData() {
+        Intent intent = new Intent(this, ActivityRemoteData.class);
+        startActivity(intent);
+    }
+
+    private void openActivityWebView() {
+        Intent intent = new Intent(this, ActivityWebView.class);
+        startActivity(intent);
     }
 
     private void openActivityGPS() {

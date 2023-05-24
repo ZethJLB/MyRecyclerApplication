@@ -3,6 +3,7 @@ package com.example.myrecyclerapplication;
 import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -14,13 +15,19 @@ import com.example.myrecyclerapplication.databinding.ActivityMapsBinding;
 
 public class ActivityMaps extends FragmentActivity implements OnMapReadyCallback {
 
+    private static final String TAG = "ActivityMaps.java";
+    public Double mLatitude;
+    public Double mLongitude;
+
     private GoogleMap mMap;
     private ActivityMapsBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        mLatitude = getIntent().getDoubleExtra("latitude", 0.00);
+        mLongitude = getIntent().getDoubleExtra("longitude", 0.00);
+        Log.d(TAG, mLatitude.toString() + " " + mLongitude.toString());
         binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -44,7 +51,7 @@ public class ActivityMaps extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng school = new LatLng(48.4264, -123.3698);
+        LatLng school = new LatLng(mLatitude, mLongitude);
         mMap.addMarker(new MarkerOptions().position(school).title("Our School"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(school));
     }

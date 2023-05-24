@@ -27,7 +27,15 @@
     <string name="activity_slider_result">Result</string>
     <string name="title_activity_maps">ActivityMaps</string>
 
-<!--    Activity GPS-->
-    <string name="activity_gps_button">Current GPS Coordinate</string>
+    <!--    Activity GPS-->
+    <string name="activity_gps_button">Get GPS Coordinate</string>
+    <string name="activity_gps_tracker_dialog_title">GPS Settings</string>
+    <string name="activity_gps_tracker_dialog_message">GPS should be running to use this feature, please turn it on uwu</string>
+    <string name="activity_gps_tracker_dialog_button">Settings</string>
+    <string name="activity_gps_tracker_dialog_button_negative">no way</string>
+
+<!--    Activity Remote Data-->
+    <string name="activity_remote_data_image_description">this is an image</string>
+
 
 </resources>
